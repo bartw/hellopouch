@@ -33,3 +33,14 @@ http-server
 
 browse to http://localhost:8080
 check dev tools
+
+```js
+var doc = {
+            "_id": "mittens",
+            "name": "Mittens"
+        };
+        db.put(doc);
+        db.get("mittens").then(function (doc) {
+           console.log(doc); 
+        });
+```
